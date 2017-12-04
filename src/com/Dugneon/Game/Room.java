@@ -10,9 +10,9 @@ public class Room {
 	ArrayList items = new ArrayList();
 	
 	public enum wallType{
-		MossyWall,
-		BrickWall,
-		CleanWall,
+		Mossy,
+		Brick,
+		Clean,
 		IronGate
 	}
 	
@@ -30,18 +30,24 @@ public class Room {
 
 	
 	
-	public void setWallTypes(wallType left, wallType right, wallType north, wallType south ) {
+	public Room setWallTypes(wallType left, wallType right, wallType north, wallType south ) {
 	    leftWall = left;
-	    leftWall = right;
-	    leftWall = north;
-	    leftWall = south;
+	    rightWall = right;
+	    northWall = north;
+	    southWall = south;
+		return null;
 	}
 	
-	public void addEnemy(Enemy enemy) {
-		//ToDo figure out what data to add
-		//to the enemy Arraylist
-	}
 	
+
+	
+	
+	
+/*	public void addEnemy(Enemy enemy) {
+*		//ToDo figure out what data to add
+*		//to the enemy Arraylist
+*	}
+*/	
 	
 	
 	
