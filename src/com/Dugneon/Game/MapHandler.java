@@ -10,9 +10,8 @@ public class MapHandler {
 	int MapY = 10;
 
 
-
-	Room[][] Map = new Room[MapY][MapX];{    //WHY DOES THIS WORK IM SO CONFUSED ;{
-
+public void generateNewMap() {
+	Room[][] Map = new Room[MapY][MapX];
 		//Now to generate the map
 
 		//loop through the MapY
@@ -20,16 +19,21 @@ public class MapHandler {
 
 			//loop through the MapX
 			for (int j=0; j<MapX; j++) {
+				
 				//if area is north or south map edge, generate a room with all walls
 				if (i==0 || i==MapY) {
 					Map[i][j] = new Room();
-
-					//if top or bottom edge of map generate all walls
-					if((i==0 || i==MapY ) && (j==0 || j==MapX)) {
-						Map[i][j].setWallTypes(wallType.Brick, wallType.Brick, wallType.Brick, wallType.Brick);
-					}
+					Map[i][j].setWallTypes(wallType.Brick, wallType.Brick, wallType.Brick, wallType.Brick);
+					
 
 				}
+				
+				//if area is eastern or western map edge, generate a room with all walls
+				if(j==0 || j==MapX) {
+					Map[i][j] = new Room();
+					Map[i][j].setWallTypes(wallType.Brick, wallType.Brick, wallType.Brick, wallType.Brick);
+				}
+				
 
 
 			}
@@ -43,4 +47,5 @@ public class MapHandler {
 
 	}
 }
+
 
