@@ -25,7 +25,6 @@ public void generateNewMap() {
 					Map[i][j] = new Room();
 					Map[i][j].setWallTypes(wallType.Brick, wallType.Brick, wallType.Brick, wallType.Brick);
 					
-
 				}
 				
 				//if area is eastern or western map edge, generate a room with all walls
@@ -34,14 +33,21 @@ public void generateNewMap() {
 					Map[i][j].setWallTypes(wallType.Brick, wallType.Brick, wallType.Brick, wallType.Brick);
 				}
 				
-
-
 			}
 
+		} //end of first for loop
 
+		
+		//begin population of map with paths and rooms
+		
+		for(int RoomGenerationAttempts = 0; RoomGenerationAttempts == 50 ; RoomGenerationAttempts ++) {
+			
+			
+			
+			
+			
+			
 		}
-
-
 
 
 
