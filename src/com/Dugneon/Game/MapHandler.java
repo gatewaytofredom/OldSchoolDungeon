@@ -1,6 +1,7 @@
 package com.Dugneon.Game;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import com.Dugneon.Game.Room.wallType;
 
@@ -40,6 +41,8 @@ public void generateNewMap() {
 		
 		//begin population of map with paths and rooms
 		
+		
+	
 		for(int RoomGenerationAttempts = 0; RoomGenerationAttempts == 50 ; RoomGenerationAttempts ++) {
 			
 			

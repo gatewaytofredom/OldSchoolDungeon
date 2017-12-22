@@ -1,5 +1,6 @@
 package com.Dugneon.Game;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Room {
@@ -38,6 +39,11 @@ public class Room {
 		return null;
 	}
 	
+	public String toString() {
+		
+		
+		return null;
+	}
 	
 
 	
